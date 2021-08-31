@@ -13,7 +13,7 @@ class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
 
-        int k = 0; // keep nums[0...k) are all zero elements
+        int k = 0; // keep nums[0...k) are all nonzero elements
         for(int i = 0 ; i < nums.size() ; i ++ )
             if(nums[i])
                 nums[k++] = nums[i];
